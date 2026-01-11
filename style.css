@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url("slike/pozadina.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #166534;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #166534;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #166534;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+.select-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.select-box select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.team-logo {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #166534;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #166534;
+    color: white;
+}
+
+tr:hover {
+    background: #e5ffe5;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.match img {
+    width: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #166534;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: white;
+    color: #166534;
+    border: 1px solid #166534;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+    }
+
+    .match {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2fff2;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #166534;
+    transition: 0.3s;
+}
+
+.game:hover {
+    transform: scale(1.02);
+    background: #e6ffe6;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team img {
+    width: 50px;
+}
+
+.team span {
+    font-weight: bold;
+    color: #166534;
+}
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo-box img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border: 3px solid #166534;
+    border-radius: 15px;
+    padding: 10px;
+    background: white;
+    transition: 0.3s;
+}
+
+.logo-box img:hover {
+    transform: scale(1.05);
+}
+.side-images {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+
+

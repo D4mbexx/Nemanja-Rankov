@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Timovi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="timovi.html">Timovi</a></li>
+        <li><a href="tabela.html">Tabela</a></li>
+        <li><a href="raspored.html">Raspored</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Timovi</h1>
+
+    <div class="select-box">
+        <select onchange="document.getElementById('logo').src=this.value">
+            <option value="slike/tim1.jpg">FK Titel</option>
+            <option value="slike/tim2.jpg">FK Futog</option>
+            <option value="slike/tim3.jpg">FK Slavija</option>
+            <option value="slike/tim4.jpg">FK Cement</option>
+            <option value="slike/tim5.jpg">FK Sirig</option>
+            <option value="slike/tim6.jpg">FK Fruškogorac</option>
+            <option value="slike/tim7.jpg">FK Šajkaš</option>
+            <option value="slike/tim8.jpg">FK Borac</option>
+        </select>
+    </div>
+
+    <div class="logo-box">
+        <img id="logo" src="slike/tim1.jpg">
+    </div>
+</div>
+
+</body>
+</html>
